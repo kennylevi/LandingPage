@@ -1,5 +1,78 @@
+/* section footer s */
+.footer-section {
+    margin-bottom: 10%;
+}
 
-/* Footer section stylings By Kennie */
+.footer-section .get-in-touch {
+    display: grid;
+    grid-row-gap: 50px;
+    grid-template-columns: 40% 1fr;
+    padding: 25px 0 0 0;
+}
+
+.footer-section .get-in-touch .column-1 {
+    text-align: center;
+    margin-top: 30%;
+    padding: 0 20px 0 0;
+}
+
+.footer-section .get-in-touch .column-2 {
+    padding: 10px 40px 0 100px;
+}
+
+.footer-section .get-in-touch .column-2 .title h2 {
+    color: #393649;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.footer-section .get-in-touch .column-2 .title h6 {
+    color: #393649;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.footer-section .get-in-touch .column-2 .form-container {
+    margin-top: 10%;
+    width: 70%;
+}
+
+.footer-section .get-in-touch .column-2 .form-container form label {
+    text-transform: uppercase;
+    letter-spacing: 0.1px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.footer-section .get-in-touch .column-2 .form-container form input {
+    height: 50px;
+    color: #8d88a5;
+    letter-spacing: 0.1px;
+}
+
+.footer-section .get-in-touch .column-2 .form-container form input:focus,
+.footer-section .get-in-touch .column-2 .form-container form textarea:focus {
+    border-color: #2c0fef;
+    box-shadow: none;
+}
+
+.footer-section .get-in-touch .column-2 .form-container form input::placeholder,
+.footer-section .get-in-touch .column-2 .form-container form textarea::placeholder {
+    color: #8d88a5;
+    box-shadow: none;
+    font-weight: 300;
+}
+
+.footer-section .get-in-touch .column-2 .form-container form button {
+    border: 2px solid #2c0fef;
+    color: #2c0fef;
+    font-weight: 600;
+    border-radius: 4px;
+    box-shadow: none;
+}
+
+
+/* Page footer section stylings By Kennie */
 .page-footer {
     background-color: #ffffff !important;
 }
@@ -10,7 +83,7 @@
     font-size: 26px;
 }
 
-.page-footer .footer-form h6{
+.page-footer .footer-form h6 {
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.1px;
@@ -42,7 +115,7 @@
     margin-top: 8px;
 }
 
-.page-footer .horizontal{
+.page-footer .horizontal {
     border: 0.5px solid #5f5a76;
     margin-top: 12%;
     margin-bottom: 1px;
@@ -60,12 +133,12 @@
     width: 230px;
 }
 
-.page-footer .footer-nav .social-media p{
+.page-footer .footer-nav .social-media p {
     text-transform: uppercase;
     display: inline;
 }
 
-.page-footer .footer-nav .social-media a img{
+.page-footer .footer-nav .social-media a img {
     margin-left: 5px;
 }
 
@@ -76,13 +149,44 @@
 /* responsive styling for footeer */
 
 @media (max-width: 768px) {
+    .footer-section .get-in-touch {
+        display: grid;
+        padding: 25px 0 0 0;
+        grid-template-columns: none;
+    }
+
+    .footer-section .get-in-touch .column-1 {
+        display: none;
+    }
+
+    .footer-section .get-in-touch .column-2 {
+        padding: 20px;
+    }
+
+    .footer-section .get-in-touch .column-2 .title h2 {
+       text-align: center;
+    }
+
+    .footer-section .get-in-touch .column-2 .form-container {
+        margin-top: 10%;
+        width: 100%;
+    }
+
+
+    /* page footer mobile starts */
     .page-footer .footer-form .form-container {
         width: 100%;
     }
-    .page-footer .footer-nav{
+
+    .footer-section .get-in-touch .column-2 .form-container form button {
+        width: 100%
+    }
+
+    .page-footer .footer-nav {
         flex-direction: column;
         text-align: center;
     }
+
     .page-footer .footer-nav .author {
         width: 100%;
     }
